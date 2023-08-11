@@ -11,10 +11,7 @@ A collection of small Python3 projects for practice and learning.
   - [TodoList Program](#todolist-program)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## About ℹ️
@@ -25,11 +22,11 @@ This repository contains a variety of small Python3 projects created for practic
 
 ### Hangman Game 🎮
 
-A classic game of Hangman, where players guess letters to reveal a hidden word. Test your vocabulary and guessing skills!
+A classic game of Hangman, where players guess letters to reveal a hidden word.
 
 ### Permutations Script 🔀
 
-A script that generates permutations of a given list of elements. Useful for understanding permutation algorithms and their applications.
+A script that generates permutations of a given word. Useful for understanding permutation algorithms and their applications.
 
 ### TodoList Program 📝
 
