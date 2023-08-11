@@ -1,0 +1,8 @@
+
+    TDL-Shell Commands:
+    - show [ list ] [ done ] [ number ]
+    - add [ "Whatever thing to do." ]
+    - remove [ number ]
+    - change [ number ]
+    - done [ number ] [ clear ]
+    - exit

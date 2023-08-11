@@ -1,0 +1,5 @@
+
+Finir la fonction 'done'.
+Appeler ce script depuis l'extérieur.
+Séparer les fonctions pour 'errors' et 'files' dans des fichiers distincts.
+Finir la fonction 'change'.
