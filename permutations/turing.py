@@ -6,7 +6,7 @@ class Turing:
         self.word = ""
         self.wlist = []
         self.exit = False
-        self.cwd = os.getcwd()
+        self.dir = os.path.dirname(os.path.abspath(__file__))
 
     def getPerms(self, string) -> list:
         s = string
@@ -38,7 +38,7 @@ class Turing:
 
     def savePerms(self) -> None:
         try:
-            self.file_path = os.path.join(self.cwd, f"turing/{self.word}.txt")
+            self.file_path = os.path.join(self.dir, f"{self.word}.txt")
             with open(self.file_path, 'w+') as f:
                 for p in self.wlist:
                     f.write(f"{p}\n")
