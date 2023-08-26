@@ -56,10 +56,14 @@ class tdlShell:
 
     def cmdRemove(self) -> None:
         try:
-            a2 = self.input.split(' ', 1)[1]
-            r = self.list[int(a2)]
-            self.list.pop(int(a2))
-            print(f"\n -- {r} -- \n --> Successfully removed from the list!\n")
+            match = re.search(r'^remove(?:\s+\d+)+$', self.input)
+            if match:
+                m = match.group()
+            for n in m:
+                if n.isdigit():
+                    r = self.list[int(n)]
+                    self.list.pop(int(n))
+                    print(f"\n -- {r} -- \n --> Successfully removed from the list!\n")
         except:
             print(Errors.getErrorCmd("remove_from_list"))
 
@@ -74,6 +78,8 @@ class tdlShell:
             elif a2 == "clear":
                 self.done_list = [""]
                 print("\n --> Completed list cleared!\n")
+            else:
+                print(Errors.getErrorCmd("done"))
         except:
             print(Errors.getErrorCmd("done"))
 
